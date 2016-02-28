@@ -1,0 +1,233 @@
+x -< 5
+x <- 5
+x
+1:20
+library(httr)
+oauth_endpoints("github")
+myapp <- oauth_app("Learning", "3084eb6136ce31fd906fd1b54c5bdd301a0fa199")
+myapp <- oauth_app("github", "3084eb6136ce31fd906fd1b54c5bdd301a0fa199")
+myapp <- oauth_app("github", "3084eb6136ce31fd906fd1b54c5bdd301a0fa199", secret = "721fbfd39f975f339271df16a83d7b937cd935e4")
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+myapp <- oauth_app("github", "0e0569146c7227ee0081", secret = "721fbfd39f975f339271df16a83d7b937cd935e4")
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+install.packages("httpuv")
+library(httr)#
+#
+# 1. Find OAuth settings for github:#
+#    http://developer.github.com/v3/oauth/#
+oauth_endpoints("github")#
+#
+# 2. To make your own application, register at at#
+#    https://github.com/settings/applications. Use any URL for the homepage URL#
+#    (http://github.com is fine) and  http://localhost:1410 as the callback url#
+##
+#    Replace your key and secret below.#
+myapp <- oauth_app("github",#
+  key = "0e0569146c7227ee0081",#
+  secret = "721fbfd39f975f339271df16a83d7b937cd935e4#
+")#
+#
+# 3. Get OAuth credentials#
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)#
+#
+# 4. Use API#
+gtoken <- config(token = github_token)#
+req <- GET("https://api.github.com/rate_limit", gtoken)#
+stop_for_status(req)#
+content(req)#
+#
+# OR:#
+req <- with_config(gtoken, GET("https://api.github.com/rate_limit"))#
+stop_for_status(req)#
+content(req)
+library(httr)#
+#
+# 1. Find OAuth settings for github:#
+#    http://developer.github.com/v3/oauth/#
+oauth_endpoints("github")
+library(httr)#
+# 2. To make your own application, register at at#
+#    https://github.com/settings/applications. Use any URL for the homepage URL#
+#    (http://github.com is fine) and  http://localhost:1410 as the callback url#
+##
+#    Replace your key and secret below.#
+myapp <- oauth_app("github",#
+  key = "0e0569146c7227ee0081",#
+  secret = "721fbfd39f975f339271df16a83d7b937cd935e4#
+")
+library(httr)#
+# 3. Get OAuth credentials#
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+library(httr)#
+# 4. Use API#
+gtoken <- config(token = github_token)#
+req <- GET("https://api.github.com/jtleek/repos", gtoken)#
+stop_for_status(req)#
+content(req)
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+gtoken <- config(token = github_token)
+req <- GET("https://api.github.com/jtleek/repos", gtoken)
+stop_for_status(req)
+content(req)
+# 2. To make your own application, register at at#
+> #    https://github.com/settings/applications. Use any URL for the homepage URL#
+> #    (http://github.com is fine) and  http://localhost:1410 as the callback url#
+> ##
+> #    Replace your key and secret below.#
+> myapp <- oauth_app("github",#
++   key = "0e0569146c7227ee0081",#
++   secret = "721fbfd39f975f339271df16a83d7b937cd935e4#
++ ")
+# 2. To make your own application, register at at#
+> #    https://github.com/settings/applications. Use any URL for the homepage URL#
+> #    (http://github.com is fine) and  http://localhost:1410 as the callback url#
+> ##
+> #    Replace your key and secret below.#
+> myapp <- oauth_app("github",key = "0e0569146c7227ee0081",secret = "721fbfd39f975f339271df16a83d7b937cd935e4")
+> myapp <- oauth_app("github",key = "0e0569146c7227ee0081",secret = "721fbfd39f975f339271df16a83d7b937cd935e4")
+myapp <- oauth_app("github",key = "0e0569146c7227ee0081",secret = "721fbfd39f975f339271df16a83d7b937cd935e4")
+library(httr)
+myapp <- oauth_app("github",key = "0e0569146c7227ee0081",secret = "721fbfd39f975f339271df16a83d7b937cd935e4")
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+install.packages(httpuv)
+install.packages("httpuv")
+myapp <- oauth_app("github",key = "0e0569146c7227ee0081",secret = "721fbfd39f975f339271df16a83d7b937cd935e4")
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+gtoken <- config(token = github_token)
+req <- GET("https://api.github.com/users/jtleek/repos", gtoken)
+stop_for_status(req)
+content(req)
+con=url(“http://biostat.jhsph.edu/~jleek/contact.html ”)
+con <- url(“http://biostat.jhsph.edu/~jleek/contact.html ”)
+con = url(“http://biostat.jhsph.edu/~jleek/contact.html”)
+url <- “http://biostat.jhsph.edu/~jleek/contact.html”
+url <-“http://biostat.jhsph.edu/~jleek/contact.html”
+con=("http://biostat.jhsph.edu/~jleek/contact.html")
+htmlCode = readlines(con)
+install.packages("readlines")
+library(readlines)
+library(httr)
+library(readlines)
+htmlCode = readlines(con)
+htmlCode = readLines(con)
+close(con)
+nchar(htmlCode[c(10,20,30,100)])
+url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for"
+download.file(fileUrl, destfile=”./quiz3.csv”, method = “curl”)
+download.file(url, destfile=”./quiz3.csv”, method = “curl”)
+download.file(url, destfile="./quiz3.csv", method = "curl")
+read.csv("quiz3.csv")
+download.file(fileUrl, destfile=”./quiz3.for”, method = “curl”)
+download.file(url, destfile="./quiz3.for", method = "curl")
+data <- read.fwf("quiz3", header = TRUE, sep = "\t")
+data <- read.fwf("quiz3", 3, header = TRUE, sep = "\t")
+data <- read.fwf("quiz3.for", 3, header = TRUE, sep = "\t")
+data
+data <- read.fwf("quiz3.for", 9, header = TRUE, sep = "\t")
+data
+data[4]
+data[1]
+data[2]
+data[3]
+data <- read.fwf("quiz3.for", 9, header = TRUE)
+data
+data[4]
+data <- read.fwf("quiz3.for", 9, header = TRUE, sep=".")
+data
+data[4]
+data[,4]
+data[,1]
+data <- read.fwf("quiz3.for", 9, header = TRUE, sep=".", skip=2)
+data
+data[,4]
+data[4]
+data[1]
+data <- read.fwf("quiz3.for", 61, header = TRUE, sep=" ", skip=2)
+data <- read.fwf("quiz3.for", 61, header = TRUE, sep="/t", skip=2)
+data <- read.fwf("quiz3.for", 61, header = TRUE, sep="\t", skip=2)
+data
+data <- read.fwf("quiz3.for", 62, header = TRUE, sep="-", skip=2)
+data <- read.fwf("quiz3.for", 62, header = TRUE, sep="/t", skip=2)
+data <- read.fwf("quiz3.for", 62, header = TRUE, sep="\t", skip=2)
+data
+data <- read.fwf("quiz3.for", 62, header = TRUE, sep=" ", skip=2)
+.
+data <- read.fwf("quiz3.for", 62, header = TRUE, sep=".", skip=2)
+data <- read.fwf("quiz3.for", 62, header = TRUE, sep=" ", skip=2)
+data <- read.fwf("quiz3.for", 62, header = TRUE, sep=",", skip=2)
+data
+data <- read.fwf("quiz3.for", 62, header = TRUE, sep="\t", skip=3)
+data
+data <- read.fwf("quiz3.for", 62, header = TRUE, sep=".", skip=3)
+data <- read.fwf("quiz3.for", 62, header = TRUE, sep="-", skip=3)
+data <- read.fwf("quiz3.for", 62, header = TRUE, sep="\t", skip=3)
+data[4]
+data[,4]
+data[1]
+data <- read.fwf("quiz3.for", 62, header = FALSE, skip=4)
+data
+data <- read.fwf("quiz3.for", 62, header = FALSE, skip=4, sep="-")
+data <- read.fwf("quiz3.for", 9, header = FALSE, skip=4, sep="-")
+data
+data <- read.fwf("quiz3.for", c(9,9,9), header = FALSE, skip=4, sep="-")
+data
+data <- read.fwf("quiz3.for", c(9,9,9), header = FALSE, skip=4, sep="-")
+data <- read.fwf("quiz3.for", c(9,9,9,9,9,9), header = FALSE, skip=4, sep="-")
+data <- read.fwf("quiz3.for", c(9,9,9,9,9,9.9), header = FALSE, skip=4, sep="-")
+data <- read.fwf("quiz3.for", c(9,9,9,9,9,9,9), header = FALSE, skip=4, sep="-")
+data <- read.fwf("quiz3.for", 1, header = FALSE, skip=4, sep="-")
+data
+data <- read.fwf("quiz3.for", 2, header = FALSE, skip=4, sep="-")
+data
+data <- read.fwf("quiz3.for", 3, header = FALSE, skip=4, sep="-")
+data
+data <- read.fwf("quiz3.for", 4, header = FALSE, skip=4, sep="-")
+data
+data <- read.fwf("quiz3.for", 5, header = FALSE, skip=4, sep="-")
+data
+data <- read.fwf("quiz3.for", 9, header = FALSE, skip=4, sep="-")
+data
+data <- read.fwf("quiz3.for", width=(8,4), header = FALSE, skip=4, sep=" ")
+data <- read.fwf("quiz3.for", width=c(8,4), header = FALSE, skip=4, sep=" ")
+data
+data <- read.fwf("quiz3.for", width=c(10,9,9), header = FALSE, skip=4, sep=" ")
+data
+data <- read.fwf("quiz3.for", width=c(10,9,9), header = FALSE, skip=4)
+data
+data <- read.fwf("quiz3.for", width=c(10,9,9,9,9,9), header = FALSE, skip=4)
+data
+data <- read.fwf("quiz3.for", width=c(10,9,9,4,9,4,9,4,4), header = FALSE, skip=4)
+data
+data[4]
+sum(data[4])
+# Libraries#
+library(xlsx)#
+library(httr)#
+library(XML)#
+library(data.table)#
+#
+# Working Directory#
+setwd("/Users/enricoferrari/datascience/3. Getting and Cleaning Data/Week 2")#
+# Question 1#
+#
+# 1. Find OAuth settings for github:#
+#    http://developer.github.com/v3/oauth/#
+oauth_endpoints("github")#
+#
+# 2. To make your own application, register at at#
+#    https://github.com/settings/applications. Use any URL for the homepage URL#
+#    (http://github.com is fine) and  http://localhost:1410 as the callback url#
+##
+#    Replace your key and secret below.#
+myapp <- oauth_app("Learning",#
+                   key = "0e0569146c7227ee0081",#
+                   secret = "adfa66299ee04664a7c49ddda3a81e69b727b9e4")#
+#
+# 3. Get OAuth credentials#
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)#
+#
+# 4. Use API#
+gtoken <- config(token = github_token)#
+req <- GET("https://api.github.com/users/jtleek/repos", gtoken)#
+stop_for_status(req)#
+content(req)
